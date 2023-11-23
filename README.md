@@ -118,24 +118,44 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 ## Answers
 q.1
 A UNIX LIKE OPERATING SYSYTEM
+
+
 Q.2
 Linux
+
+
 Q.3
 simple
+
+
 Q.4
 as interrupts
+
+
 Q.5
 512
+
+
 Q.6
 Sh
+
+
 Q.7
 Round robin scheduling
+
+
 Q.8
 Paging
+
+
 Q.9
 Using Hardware interrupts
+
+
 Q.10
 NO
+
+
 Q.11
 MIT
 
@@ -170,14 +190,14 @@ Question 16: Shell Commands
   cp: Copies files or directories.
 
 Question 17: Process Synchronization
-Process synchronization in XV6 is essential for coordinating the execution of multiple processes. Mechanisms include semaphores, locks, and condition variables. Synchronization prevents race conditions and ensures orderly access to shared resources. Locks (i.e., spinlocks) in xv6 are implemented using the xchg atomic instruction. The function
-to acquire a lock disables all interrupts, and the function that releases the lock re-enables them.
+Process synchronization in XV6 is essential for coordinating the execution of multiple processes. Mechanisms include semaphores, locks, and condition variables. Synchronization prevents race conditions and ensures orderly access to shared resources. Locks (i.e., spinlocks) in xv6 are implemented using the xchg atomic instruction. The function to acquire a lock disables all interrupts, and the function that releases the lock re-enables them.xv6 provides sleep (line 2803) and wakeup functions, that are equivalent to the wait and signal functions of a condition variable
 
 Question 18: Interrupt Handling
 Interrupts in XV6 are used to handle external events or exceptional conditions. They are managed by the interrupt descriptor table (IDT). When an interrupt occurs, the corresponding handler is invoked. Interrupts are crucial for responding to hardware events and maintaining system responsiveness.
 
 Question 19: Virtual Memory
 Virtual memory in XV6 provides a separation between the logical address space used by a process and the actual physical memory. It allows for more efficient memory utilization, process isolation, and facilitates features like demand paging.
+Features like implmentation of demand paging are other advantages of using virtual memory.
 
 Question 20: Boot Process
 
